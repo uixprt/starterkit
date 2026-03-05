@@ -24,7 +24,7 @@
     "pack": "npm pack"
   },
   "dependencies": {
-    "@uixprt/elements": "^0.0.1",
+    "@uixprt/elements": "^0.0.2",
     "@mui/material": "^5.15.11",
     "@mui/icons-material": "^5.15.11",
     "@emotion/react": "^11.11.3",
