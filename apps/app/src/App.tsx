@@ -1,10 +1,17 @@
-import { useState, useEffect } from 'react';
-import { ThemeProvider, CssBaseline, Container, Box, Typography, Paper } from '@mui/material';
-import { ModuleHeader, themes, iconRegistry, SvgIcon } from '@a/module-header';
-import type { ThemeName } from '@a/module-header';
+import { useState, useEffect } from "react";
+import {
+  ThemeProvider,
+  CssBaseline,
+  Container,
+  Box,
+  Typography,
+  Paper,
+} from "@mui/material";
+import { ModuleHeader, themes, iconRegistry, SvgIcon } from "@a/module-header";
+import type { ThemeName } from "@a/module-header";
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState<ThemeName>('light');
+  const [currentTheme, setCurrentTheme] = useState<ThemeName>("light");
 
   useEffect(() => {
     // Initialize icon registry with current theme
@@ -17,11 +24,11 @@ function App() {
   };
 
   const handleMenuClick = () => {
-    console.log('Menu button clicked');
+    console.log("Menu button clicked");
   };
 
   const handleProfileClick = () => {
-    console.log('Profile clicked');
+    console.log("Profile clicked");
   };
 
   return (
@@ -35,7 +42,7 @@ function App() {
           onMenuClick={handleMenuClick}
           onProfileClick={handleProfileClick}
         />
-        
+
         <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
           <Paper sx={{ p: 4 }}>
             <Typography variant="h4" gutterBottom>
@@ -46,25 +53,28 @@ function App() {
             </Typography>
             <Box component="ul" sx={{ pl: 2 }}>
               <Typography component="li" variant="body2" gutterBottom>
-                <strong>apps/app</strong> - React + Vite + TypeScript application
+                <strong>apps/app</strong> - React + Vite + TypeScript
+                application
               </Typography>
               <Typography component="li" variant="body2" gutterBottom>
                 <strong>modules/module-header</strong> - Header module wrapper
               </Typography>
               <Typography component="li" variant="body2" gutterBottom>
-                <strong>packages/design-system</strong> - MUI-based design system with themes and icon registry
+                <strong>packages/design-system</strong> - MUI-based design
+                system with themes and icon registry
               </Typography>
             </Box>
             <Typography variant="body1" paragraph sx={{ mt: 2 }}>
-              The header uses the a-svg web component from @a/elements package and supports theme switching.
-              Try clicking the theme toggle button in the header!
+              The header uses the a-svg web component from @uixprt/elements
+              package and supports theme switching. Try clicking the theme
+              toggle button in the header!
             </Typography>
-            
+
             <Box sx={{ mt: 4 }}>
               <Typography variant="h6" gutterBottom>
                 Example Icon Usage
               </Typography>
-              <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+              <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
                 <SvgIcon name="star" size="32" color="gold" />
                 <SvgIcon name="heart" size="32" color="red" />
                 <SvgIcon name="home" size="32" color="blue" />

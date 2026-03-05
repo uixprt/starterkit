@@ -1,29 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Test Custom Elements</title>
-</head>
-<body>
-  <h1>Test Custom Elements</h1>
-  <div id="test">
-    <a-svg name="star" size="48" color="gold"></a-svg>
-    <a-svg name="heart" size="48" color="red"></a-svg>
-  </div>
-  
-  <script type="module">
-    import '@a/elements';
-    
-    // Wait a bit for registration
-    setTimeout(() => {
-      console.log('a-svg is defined:', customElements.get('a-svg'));
-      console.log('a-button is defined:', customElements.get('a-button'));
-      
-      const svgs = document.querySelectorAll('a-svg');
-      console.log('Found a-svg elements:', svgs.length);
-      svgs.forEach((el, i) => {
-        console.log(`Element ${i}:`, el.getAttribute('name'), el);
-      });
-    }, 100);
-  </script>
-</body>
+  <head>
+    <title>Test Custom Elements</title>
+  </head>
+  <body>
+    <h1>Test Custom Elements</h1>
+    <div id="test">
+      <a-svg name="star" size="48" color="gold"></a-svg>
+      <a-svg name="heart" size="48" color="red"></a-svg>
+    </div>
+
+    <script type="module">
+      import "@uixprt/elements";
+
+      // Wait a bit for registration
+      setTimeout(() => {
+        console.log("a-svg is defined:", customElements.get("a-svg"));
+        console.log("a-button is defined:", customElements.get("a-button"));
+
+        const svgs = document.querySelectorAll("a-svg");
+        console.log("Found a-svg elements:", svgs.length);
+        svgs.forEach((el, i) => {
+          console.log(`Element ${i}:`, el.getAttribute("name"), el);
+        });
+      }, 100);
+    </script>
+  </body>
 </html>

@@ -14,7 +14,7 @@ starterkit/
 │   └── module-header/          # Header module wrapper
 ├── packages/
 │   └── design-system/          # MUI-based design system
-└── elements/                   # Web components (@a/elements)
+└── elements/                   # Web components (@uixprt/elements)
 ```
 
 ## Features
@@ -24,7 +24,7 @@ starterkit/
 - **TypeScript** - Type-safe development
 - **Material-UI v5** - Complete UI component library
 - **Theme System** - Light and dark themes with icon registry
-- **Web Components** - Custom SVG icon component from @a/elements
+- **Web Components** - Custom SVG icon component from @uixprt/elements
 - **Modular Architecture** - Reusable modules and packages
 
 ## Quick Start
@@ -78,16 +78,18 @@ This will create `.tgz` files in each package directory.
 ### @a/design-system
 
 Design system package with Material-UI components:
+
 - Dashboard header component
 - Two themes (light/dark)
 - Icon registry with theme-specific logos
-- Integration with @a/elements svg component
+- Integration with @uixprt/elements svg component
 
 **Location:** `packages/design-system/`
 
 ### @a/module-header
 
 Module wrapper for the design system header:
+
 - Simplified API for applications
 - Theme management
 - Re-exports design system utilities
@@ -97,6 +99,7 @@ Module wrapper for the design system header:
 ### @a/app
 
 React application demonstrating the use of all packages:
+
 - Vite + React 18 + TypeScript
 - Uses @a/module-header
 - Theme switcher
@@ -135,6 +138,7 @@ React application demonstrating the use of all packages:
 ### Package Level
 
 Each package has:
+
 - `npm run dev` - Watch mode (libraries) or dev server (app)
 - `npm run build` - Production build
 - `npm run pack` - Create .tgz package
@@ -146,7 +150,7 @@ Each package has:
 - **TypeScript** - Type safety
 - **Material-UI v5** - Component library
 - **Emotion** - CSS-in-JS
-- **Web Components** - Custom elements from @a/elements
+- **Web Components** - Custom elements from @uixprt/elements
 
 ## Icon System
 
@@ -154,7 +158,7 @@ The design system includes an icon registry that loads theme-specific logos:
 
 - Light theme: Blue logo variants
 - Dark theme: Light blue logo variants
-- Icons are loaded via @a/elements svg web component
+- Icons are loaded via @uixprt/elements svg web component
 - Each theme automatically switches logos
 
 ## Deployment
@@ -186,7 +190,7 @@ npm run build
 # Deploy the apps/app/dist folder to your hosting
 ```
 
-## Publishing @a/elements to npm
+## Publishing @uixprt/elements to npm
 
 If you want to publish the web components package to npm registry:
 

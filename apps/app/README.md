@@ -10,7 +10,7 @@ React application built with Vite and TypeScript that demonstrates the use of th
 - Material-UI integration
 - Theme switcher
 - Uses @a/module-header for consistent header
-- Integrates @a/elements web components
+- Integrates @uixprt/elements web components
 
 ## Development
 

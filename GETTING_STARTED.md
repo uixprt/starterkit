@@ -17,6 +17,7 @@ cd starterkit
 ```
 
 This will:
+
 1. Install all dependencies
 2. Build the design-system package
 3. Build the module-header module
@@ -61,11 +62,13 @@ The application will open in your browser at http://localhost:3000
 ### Making Changes to the Design System
 
 1. Navigate to the package:
+
    ```bash
    cd packages/design-system
    ```
 
 2. Start watch mode:
+
    ```bash
    npm run dev
    ```
@@ -75,6 +78,7 @@ The application will open in your browser at http://localhost:3000
 ### Making Changes to the Module Header
 
 1. Navigate to the module:
+
    ```bash
    cd modules/module-header
    ```
@@ -97,6 +101,7 @@ npm run build
 ```
 
 This builds:
+
 - The design-system package
 - The module-header module
 - The app (production-ready)
@@ -161,7 +166,7 @@ starterkit/
 │       │   └── index.ts
 │       └── package.json
 │
-└── elements/                      # @a/elements web components
+└── elements/                      # @uixprt/elements web components
 ```
 
 ## Features Overview
@@ -173,13 +178,14 @@ The app includes a theme toggle button in the header. Click it to switch between
 ### Icon Registry
 
 The design system uses an icon registry that:
+
 - Manages theme-specific icons
 - Automatically loads correct logos for each theme
-- Integrates with @a/elements svg web component
+- Integrates with @uixprt/elements svg web component
 
 ### Web Components
 
-The app uses the `<a-svg>` web component from @a/elements for displaying icons. Example usage:
+The app uses the `<a-svg>` web component from @uixprt/elements for displaying icons. Example usage:
 
 ```tsx
 <a-svg name="star" size="32" color="gold"></a-svg>
@@ -188,6 +194,7 @@ The app uses the `<a-svg>` web component from @a/elements for displaying icons. 
 ### Material-UI Components
 
 All UI components are built with Material-UI v5:
+
 - AppBar with responsive toolbar
 - Menu and navigation
 - Typography system
@@ -222,6 +229,7 @@ All UI components are built with Material-UI v5:
 ### Dependencies Not Found
 
 If you see "Cannot find module" errors:
+
 ```bash
 npm install
 cd packages/design-system && npm run build
@@ -231,13 +239,15 @@ cd ../modules/module-header && npm run build
 ### Icons Not Showing
 
 Make sure:
-1. The @a/elements package is in the correct location
+
+1. The @uixprt/elements package is in the correct location
 2. The icon registry is initialized
 3. SVG files exist in `apps/app/public/icons/`
 
 ### Build Errors
 
 Clear the build caches and rebuild:
+
 ```bash
 rm -rf apps/app/dist modules/*/dist packages/*/dist
 npm run build
@@ -254,6 +264,7 @@ npm run build
 ## Support
 
 For issues or questions:
+
 - Check the README.md files in each package
 - Review the TypeScript types for API documentation
 - Examine example usage in `apps/app/src/App.tsx`

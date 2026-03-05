@@ -47,14 +47,14 @@ cd packages/design-system && npm pack
 
 ## Common File Locations
 
-| What | Where |
-|------|-------|
-| Add theme | `packages/design-system/src/themes/index.ts` |
+| What          | Where                                                       |
+| ------------- | ----------------------------------------------------------- |
+| Add theme     | `packages/design-system/src/themes/index.ts`                |
 | Modify header | `packages/design-system/src/components/DashboardHeader.tsx` |
-| Add icons | `packages/design-system/src/icon-registry.ts` |
-| App entry | `apps/app/src/main.tsx` |
-| App component | `apps/app/src/App.tsx` |
-| Logo files | `apps/app/public/icons/` |
+| Add icons     | `packages/design-system/src/icon-registry.ts`               |
+| App entry     | `apps/app/src/main.tsx`                                     |
+| App component | `apps/app/src/App.tsx`                                      |
+| Logo files    | `apps/app/public/icons/`                                    |
 
 ## Key Concepts
 
@@ -67,7 +67,7 @@ The monorepo uses npm/pnpm workspaces. Packages reference each other via `file:`
 - `@a/design-system` → MUI + themes + components
 - `@a/module-header` → wraps design-system header
 - `@a/app` → uses module-header
-- All → use `@a/elements` for svg web component
+- All → use `@uixprt/elements` for svg web component
 
 ### Build Order
 
@@ -97,11 +97,11 @@ All packages use TypeScript with strict mode. Types are exported from each packa
 
 ```tsx
 // Using a-svg web component
-<a-svg name="star" size="32" color="gold" />
+<a-svg name="star" size="32" color="gold" />;
 
 // Using SvgIcon wrapper
-import { SvgIcon } from '@a/design-system';
-<SvgIcon src="/path/to/icon.svg" size="32" />
+import { SvgIcon } from "@a/design-system";
+<SvgIcon src="/path/to/icon.svg" size="32" />;
 ```
 
 ## Common Issues
