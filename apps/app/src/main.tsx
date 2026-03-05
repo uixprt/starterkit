@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '@a/elements'; // Import and register custom elements FIRST
+import '@uixprt/elements'; // Import and register custom elements FIRST
 import App from './App';
 
 // Debug: Check if custom elements are registered

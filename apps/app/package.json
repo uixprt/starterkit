@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@a/module-header": "file:../../modules/module-header",
-    "@a/elements": "file:../../../elements",
+    "@uixprt/elements": "^0.0.1",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.11",

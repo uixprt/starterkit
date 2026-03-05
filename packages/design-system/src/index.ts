@@ -1,5 +1,5 @@
 // Import and register custom elements first
-import '@a/elements';
+import '@uixprt/elements';
 
 export { DashboardHeader } from './components/DashboardHeader';
 export type { DashboardHeaderProps } from './components/DashboardHeader';
